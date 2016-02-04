@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4A0769661C62B53100F98C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0769651C62B53100F98C23 /* AppDelegate.swift */; };
-		4A0769681C62B53100F98C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0769671C62B53100F98C23 /* ViewController.swift */; };
 		4A07696B1C62B53100F98C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0769691C62B53100F98C23 /* Main.storyboard */; };
 		4A07696D1C62B53100F98C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A07696C1C62B53100F98C23 /* Assets.xcassets */; };
 		4A0769701C62B53100F98C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A07696E1C62B53100F98C23 /* LaunchScreen.storyboard */; };
+		4A0769781C62B6B300F98C23 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0769771C62B6B300F98C23 /* RootVC.swift */; };
+		4A07697A1C62B6C100F98C23 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0769791C62B6C100F98C23 /* MapVC.swift */; };
+		4A07697C1C62B94400F98C23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A07697B1C62B94400F98C23 /* CoreLocation.framework */; };
+		4A07697E1C62C7C900F98C23 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07697D1C62C7C900F98C23 /* Hospital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A0769621C62B53100F98C23 /* HospitalFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A0769651C62B53100F98C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A0769671C62B53100F98C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A0769651C62B53100F98C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HospitalFinder/AppDelegate.swift; sourceTree = "<group>"; };
 		4A07696A1C62B53100F98C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A07696C1C62B53100F98C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A07696F1C62B53100F98C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A0769711C62B53100F98C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A0769771C62B6B300F98C23 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootVC.swift; path = ../RootVC.swift; sourceTree = "<group>"; };
+		4A0769791C62B6C100F98C23 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapVC.swift; path = ../MapVC.swift; sourceTree = "<group>"; };
+		4A07697B1C62B94400F98C23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4A07697D1C62C7C900F98C23 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A07697C1C62B94400F98C23 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,10 @@
 		4A0769591C62B53100F98C23 = {
 			isa = PBXGroup;
 			children = (
+				4A07697B1C62B94400F98C23 /* CoreLocation.framework */,
 				4A0769641C62B53100F98C23 /* HospitalFinder */,
 				4A0769631C62B53100F98C23 /* Products */,
+				4A0769651C62B53100F98C23 /* AppDelegate.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +63,10 @@
 		4A0769641C62B53100F98C23 /* HospitalFinder */ = {
 			isa = PBXGroup;
 			children = (
-				4A0769651C62B53100F98C23 /* AppDelegate.swift */,
-				4A0769671C62B53100F98C23 /* ViewController.swift */,
 				4A0769691C62B53100F98C23 /* Main.storyboard */,
+				4A0769771C62B6B300F98C23 /* RootVC.swift */,
+				4A07697D1C62C7C900F98C23 /* Hospital.swift */,
+				4A0769791C62B6C100F98C23 /* MapVC.swift */,
 				4A07696C1C62B53100F98C23 /* Assets.xcassets */,
 				4A07696E1C62B53100F98C23 /* LaunchScreen.storyboard */,
 				4A0769711C62B53100F98C23 /* Info.plist */,
@@ -135,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0769681C62B53100F98C23 /* ViewController.swift in Sources */,
+				4A0769781C62B6B300F98C23 /* RootVC.swift in Sources */,
+				4A07697E1C62C7C900F98C23 /* Hospital.swift in Sources */,
+				4A07697A1C62B6C100F98C23 /* MapVC.swift in Sources */,
 				4A0769661C62B53100F98C23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
